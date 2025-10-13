@@ -13,7 +13,7 @@ public class Frame {
                 } else if (isSideBorder) {
                     System.out.print("|"); // Левые и правые границы
                 } else {
-                    System.out.print(" "); // Внутреннее пространство рамки
+                    System.out.print(" "); // Внутреннее пространство рамки.
                 }
             }
             System.out.println();

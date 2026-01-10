@@ -7,8 +7,7 @@ public class Max {
     }
 
     public int max(int a, int b, int c) {
-        int maxFromTwo = max(a, b);
-        return max(maxFromTwo, c);
+        return max(max(a, b), c);
     }
 
     public int max(int a, int b, int c, int d) {

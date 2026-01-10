@@ -41,4 +41,22 @@ class PointTest {
         double actual = a.distance(b);
         assertThat(actual).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    void whenPointsMinus1Minus1Minus1And1And1And1Then3Dot46() {
+        Point a = new Point(-1, -1, -1);
+        Point b = new Point(1, 1, 1);
+        double expected = 3.46;
+        double actual = a.distance3d(b);
+        assertThat(actual).isEqualTo(expected, withPrecision(0.01));
+    }
+
+    @Test
+    void whenPoints11And11And11Then0() {
+        Point a = new Point(1, 1, 1);
+        Point b = new Point(1, 1, 1);
+        double expected = 0;
+        double actual = a.distance3d(b);
+        assertThat(actual).isEqualTo(expected, withPrecision(0.01));
+    }
 }
